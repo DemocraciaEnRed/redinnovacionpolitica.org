@@ -315,6 +315,10 @@
 		.footer-map {
 			height: 790px;
 			background: #ccc;
+			background-image: url(../images/upsidedownmap.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center bottom;	
 		}
 
 		.show-info-link {
