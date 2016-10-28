@@ -107,7 +107,7 @@
     margin-right: 0;
   }
   nav:not(.navbar-small) .navbar-header .navbar-toggle {
-    margin-top: 15px;
+    margin-top: 13px;
   }
   .navbar-inverse .navbar-header .navbar-toggle:hover span {
     background: #ececec;
