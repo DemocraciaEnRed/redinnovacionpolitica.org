@@ -28,7 +28,7 @@
 
 	.to-the-top {
 		color: $gray;
-		
+
 		i {
 			padding-left: 7px;
 			font-size: 21px;
@@ -101,7 +101,7 @@
 			border-bottom: 1px solid rgba(204,204,204, .2);
 			color: $light;
 		}
-		
+
 		p {
 			margin: 0;
 			font-size: .9em;
@@ -133,7 +133,7 @@
 	} // .about-widget
 
 	.gallery-widget {
-		
+
 		ul {
 			list-style: none;
 			padding: 0;
@@ -201,7 +201,7 @@
 	}	// .gallery-widget
 
 	.twitter-widget {
-		
+
 		ul {
 			list-style: none;
 			margin: 0;
@@ -250,7 +250,7 @@
 	} // .twitter-widget
 
 	.newsletter-widget {
-		
+
 		form {
 
 			.form-group {
@@ -308,17 +308,17 @@
 
 /* ---- 7.2 Footer Contact ---- */
 .footer-contact {
-	
+
 	.contact-info {
 		position: relative;
 
 		.contact-map {
 			height: 790px;
-			background: #ccc;
-			background-image: url(../images/upsidedownmap.jpg);
+			background-color: #ccc;
+			background-image: url(assets/images/upsidedownmap.jpg);
 			background-repeat: no-repeat;
 			background-size: cover;
-			background-position: center bottom;	
+			background-position: center bottom;
 		}
 
 		.show-info-link {

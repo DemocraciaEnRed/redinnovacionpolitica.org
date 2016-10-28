@@ -1,4 +1,4 @@
-/* 
+/*
 _____________________________________________________
 
 	Definity - Multipurpose One/Multi Page Template
@@ -8,9 +8,9 @@ _____________________________________________________
 _____________________________________________________
 
 
-	
+
 ---------- TABLE OF CONTENTS ----------
-	
+
 	0.1 Bootstrap styles
 	0.2	Fonts imports
 	0.3 Variables
@@ -24,7 +24,7 @@ _____________________________________________________
 		1.4 Blockquotes
 		1.5 Lists
 		1.6 PAGE - Typography
-	
+
 	2.0 Buttons
 
 		2.1 Default Buttons
@@ -83,13 +83,13 @@ _____________________________________________________
 	11.0 Sliders
 
 	12.0 Testimonials
-		
+
 		12.1 Testimonials - 1 Column
 		12.2 Testimonials - 3 Columns Cards
 		12.3 Clients List
 
 	13.0 Clients
-		
+
 	14.0 Team Blocks
 
 		14.1 Team - 3 Columns
@@ -119,7 +119,7 @@ _____________________________________________________
 		18.4 Blog Post Single
 		18.5 Sidebar
 		18.6 Comments
-	
+
 	19.0 Contact
 
 		19.1 Contact Layout 1
@@ -127,7 +127,7 @@ _____________________________________________________
 		19.3 Contact Layout 3
 
 	20.0 Hero
-		
+
 		20.01 Preloader
 		20.02 Scroller
 		20.03 Hero Sliders Navigation
@@ -160,7 +160,7 @@ _____________________________________________________
 	25.0 Labels
 
 	26.0 Hover Effects
-		
+
 		26.1 Hover Default - Effect
 		26.2 Hover Bottom - Effect
 		26.3 Hover Side Panel - Effect
@@ -2370,9 +2370,13 @@ fieldset[disabled] .form-control:hover {
   position: relative;
 }
 
-.footer-contact .contact-info .footer-map {
-  height: 790px;
-  background: #ccc;
+.footer-contact .contact-info .contact-map {
+    height: 790px;
+    background-color: #ccc;
+    background-image: url(../images/upsidedownmap.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
 }
 
 .footer-contact .contact-info .show-info-link {
@@ -2420,14 +2424,15 @@ fieldset[disabled] .form-control:hover {
 .footer-contact .contact-info address {
   position: absolute;
   margin-bottom: 0;
-  padding: 280px 100px 0 130px;
+  padding: 160px 100px 0 130px;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(17, 17, 17, 0.93);
+  background: rgba(40,40,40, 0.6);
   -webkit-transition: opacity 0.5s, visibility 0.6s;
-          transition: opacity 0.5s, visibility 0.6s;
+  transition: opacity 0.5s, visibility 0.6s;
+  text-align: right;
 }
 
 .footer-contact .contact-info address ul {
@@ -2435,14 +2440,14 @@ fieldset[disabled] .form-control:hover {
   padding: 0;
   margin: 0;
   width: 50%;
-  float: left;
+  float: right;
 }
 
 .footer-contact .contact-info address ul li {
   display: block;
   margin-bottom: 30px;
-  padding: 7px 0 7px 20px;
-  border-left: 1px solid #777;
+  padding: 7px 20px 7px 0;
+  border-right: 1px solid #777;
 }
 
 .footer-contact .contact-info address ul li .adr-heading {
@@ -10236,3 +10241,40 @@ form .input-error-2:focus {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+
+/* Members Boxes */
+.member {
+    height: 390px !important;
+    width: 20% !important;
+}
+
+.member .t-item {
+    width: 100%;
+}
+
+.member .t-item .t-image {
+    height: 234px !important;
+    width: 100% !important;
+    overflow: hidden;
+}
+
+.member .t-item .t-image .t-description {
+    padding: 15px;
+    line-height: 1.25em;
+}
+
+.member .t-item .t-image .t-description .content-wrapper {
+    padding-bottom: 0px;
+}
+
+.member .t-item .t-info {
+    height: 118px !important;
+    position: relative !important;
+}
+
+.member .t-item .t-info .social-links {
+    position: absolute;
+    bottom: 0;
+    padding: 0 0 10px 0;
+}
