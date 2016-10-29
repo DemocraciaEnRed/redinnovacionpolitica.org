@@ -7714,6 +7714,7 @@ form .input-error-2:focus {
   bottom: 0;
   background-color: #111;
   z-index: 9999;
+  display:none;
 }
 
 .preloader img {
