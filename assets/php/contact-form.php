@@ -5,7 +5,7 @@ if(isset($_POST['email'])) {
 
 
     // ADD YOUR EMAIL WHERE YOU WANT TO RECIEVE THE MESSAGES
-    $email_to = "info@redinnovacionpolitica.org";
+    $email_to = "federico.villedary@gmail.com";
     $email_subject = "Mensaje de Contacto - Red de Innovación Política";
 
 
@@ -112,7 +112,7 @@ if(isset($_POST['email'])) {
 
 // create email headers
 
-$headers = 'From: '.$name+"("+$email_from+")"+."\r\n".
+$headers = 'From: '.$name+"("+$email_from+")"."\r\n".
 
 'Reply-To: '.$email_from."\r\n" .
 

@@ -850,16 +850,21 @@ $( '.form-ajax' ).on( 'keyup', 'input.validate-locally', function() {
 $( '.form-ajax' ).submit(function(e) {
 	e.preventDefault();
 	var $this = $( this ),
-			action = $this.attr( 'action' );
+		action = $this.attr( 'action' );
 
 	// The AJAX requrest
-	$.post(
-			action,
-			$this.serialize(),
-			function( data ) {
-				$( '.ajax-message' ).html( data );
-			}
-	);
+	var data = $this.serialize();
+	$.get(
+			action, data
+			
+	)
+	.done(function(data) {
+		$( '.ajax-message' ).html( data );
+	})
+	.fail(function( jqxhr, textStatus, error ) {
+		var err = textStatus + ", " + error;
+		console.log( "Request Failed: " + err );
+	});
 });
 
 //	Validates the fileds

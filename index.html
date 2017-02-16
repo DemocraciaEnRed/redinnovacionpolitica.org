@@ -206,13 +206,69 @@
                 </div><!-- / .blog-post -->
               </div><!-- / .col-md-12 -->
             </div><!-- / .col-md-8 -->
+
+            <!-- ========== Adherirse a la carta ========== -->
+
+            <div class="col-md-7 no-gap contact-form" style="margin: 0 auto;float: none;">
+                <header class="ft-centered">
+                  <h2>Adhiere a la carta</h2>
+                  <span class="subheading">Firma la adhesión como persona u organización</span>
+                </header>
+
+                <form id="form-adhere" action="/assets/php/adhere-form.php" method="POST" class="form-ajax wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+
+                  <!-- Tipo -->
+                  <div class="form-group ft-centered">
+                    <ul>
+                      <li>
+                        <input type="radio" id="tipo-persona-adherente" name="tipo" value="0">
+                        <label for="tipo-persona-adherente">Persona</label>
+                        <div class="check"></div>
+                      </li>
+                      
+                      <li>
+                        <input type="radio" id="tipo-organizacion-adherente" name="tipo" value="1">
+                        <label for="tipo-organizacion-adherente">Organización</label>
+                        
+                        <div class="check"><div class="inside"></div></div>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <!-- Name -->
+                  <div class="form-group">
+                    <input type="text" name="name" id="nombre-adherente-1" class="form-control validate-locally" placeholder="Escribe tu nombre">
+                    <label for="name-adherente-1">Nombre</label>
+                    <span class="pull-right alert-error"></span>
+                  </div>
+
+                  <!-- Email -->
+                  <div class="form-group">
+                    <input type="email" name="email" id="email-adherente-1" class="form-control validate-locally" placeholder="Escribe tu email">
+                    <label for="email-adherente-1">Email</label>
+                    <span class="pull-right alert-error"></span>
+                  </div>
+
+                  <!-- Pais -->
+                  <div class="form-group">
+                    <select name="pais" id="pais-adherente-1" class="form-control validate-locally" autocomplete></select>
+                    <label for="pais-adherente-1">País</label>
+                  </div>
+                  <input id="submit-adhere" type="submit" class="btn pull-right" value="¡Adherir!">
+
+                  <!-- Ajax Message -->
+                  <div class="ajax-message col-md-12 no-gap"></div>
+
+                </form>
+              </div>
+
           </div><!-- / .row -->
         </div><!-- / .container -->
         </section>
 
 
 
-        <!-- ========== Team - 4 columns ========== -->
+        <!-- ========== Team - 5 columns ========== -->
 
         <div class="gray-bg">
           <section id="participantes" class="container section team-4col" style="padding-top:45px">
@@ -1641,7 +1697,7 @@
                   <span class="subheading">Ayúdanos a hacer una América Latina mejor</span>
                 </header>
 
-                <form action="assets/contact-form/contact-form.php" method="POST" class="form-ajax wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+                <form id="contact-form" action="/assets/php/contact-form.php" method="POST" class="form-ajax wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
 
                   <!-- Name -->
                   <div class="form-group">
@@ -1748,5 +1804,6 @@
 
         <!-- Definity JS -->
         <script src="assets/js/main.js"></script>
+        <script src="assets/js/adhere-form.js"></script>
     </body>
 </html>
