@@ -1,11 +1,11 @@
 <?php
 
-if(isset($_POST['email'])) {
+if(isset($_GET['email'])) {
 
 
 
     // ADD YOUR EMAIL WHERE YOU WANT TO RECIEVE THE MESSAGES
-    $email_to = "federico.villedary@gmail.com";
+    $email_to = "info@redinnovacionpolitica.org";
     $email_subject = "Mensaje de Contacto - Red de Innovación Política";
 
 
@@ -32,13 +32,13 @@ if(isset($_POST['email'])) {
 
     // validation expected data exists
 
-    if(!isset($_POST['name']) ||
+    if(!isset($_GET['name']) ||
 
-        !isset($_POST['email']) ||
+        !isset($_GET['email']) ||
 
-        // !isset($_POST['phone']) || // un-commet for required
+        // !isset($_GET['phone']) || // un-commet for required
 
-        !isset($_POST['message'])) {
+        !isset($_GET['message'])) {
 
         died('We are sorry, but there appears to be a problem with the form you submitted.');
 
@@ -46,13 +46,13 @@ if(isset($_POST['email'])) {
 
 
 
-    $name = $_POST['name']; // required
+    $name = $_GET['name']; // required
 
-    $email_from = $_POST['email']; // required
+    $email_from = $_GET['email']; // required
 
-    $telephone = $_POST['phone']; // not required
+    $telephone = $_GET['phone']; // not required
 
-    $message = $_POST['message']; // required
+    $message = $_GET['message']; // required
 
 
 
