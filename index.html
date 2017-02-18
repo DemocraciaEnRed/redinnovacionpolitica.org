@@ -23,8 +23,9 @@
         <link rel="stylesheet" href="assets/styles/vendor/animate.css">
         <!-- BG Video -->
         <link rel="stylesheet" href="assets/styles/vendor/jquery.mb.YTPlayer.min.css">
-
-
+        <!-- Select 2 -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+        
         <!-- Definity CSS -->
         <link rel="stylesheet" href="assets/styles/main.css">
         <link rel="stylesheet" href="assets/styles/responsive.css">
@@ -209,58 +210,65 @@
 
             <!-- ========== Adherirse a la carta ========== -->
 
-            <div class="col-md-7 no-gap contact-form" style="margin: 0 auto;float: none;">
-                <header class="ft-centered">
-                  <h2>Adhiere a la carta</h2>
-                  <span class="subheading">Firma la adhesión como persona u organización</span>
-                </header>
+            <div id="adherir" class="col-md-7 contact-form" style="margin: 0 auto;float: none; padding-top: 100px;">
+              <header class="ft-centered">
+                <h2>Adhiere a la carta</h2>
+                <span class="subheading">Firma la adhesión como persona u organización</span>
+              </header>
 
-                <form id="form-adhere" action="/assets/php/adhere-form.php" method="POST" class="form-ajax wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+              <form id="form-adhere" action="/assets/php/adhere-form.php" method="POST" class="form-ajax wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
 
-                  <!-- Tipo -->
-                  <div class="form-group ft-centered">
-                    <ul>
-                      <li>
-                        <input type="radio" id="tipo-persona-adherente" name="tipo" value="0">
-                        <label for="tipo-persona-adherente">Persona</label>
-                        <div class="check"></div>
-                      </li>
+                <!-- Tipo -->
+                <div class="form-group ft-centered">
+                  <ul>
+                    <li>
+                      <input type="radio" id="tipo-persona-adherente" name="tipo" value="0">
+                      <label for="tipo-persona-adherente">Persona</label>
+                      <div class="check"></div>
+                    </li>
+                    
+                    <li>
+                      <input type="radio" id="tipo-organizacion-adherente" name="tipo" value="1">
+                      <label for="tipo-organizacion-adherente">Organización</label>
                       
-                      <li>
-                        <input type="radio" id="tipo-organizacion-adherente" name="tipo" value="1">
-                        <label for="tipo-organizacion-adherente">Organización</label>
-                        
-                        <div class="check"><div class="inside"></div></div>
-                      </li>
-                    </ul>
-                  </div>
+                      <div class="check"><div class="inside"></div></div>
+                    </li>
+                  </ul>
+                </div>
 
-                  <!-- Name -->
-                  <div class="form-group">
-                    <input type="text" name="name" id="nombre-adherente-1" class="form-control validate-locally" placeholder="Escribe tu nombre">
-                    <label for="name-adherente-1">Nombre</label>
-                    <span class="pull-right alert-error"></span>
-                  </div>
+                <!-- Name -->
+                <div class="form-group">
+                  <input type="text" name="name" id="nombre-adherente-1" class="form-control validate-locally" placeholder="Escribe tu nombre" required>
+                  <label for="name-adherente-1">Nombre</label>
+                  <span class="pull-right alert-error"></span>
+                </div>
 
-                  <!-- Email -->
-                  <div class="form-group">
-                    <input type="email" name="email" id="email-adherente-1" class="form-control validate-locally" placeholder="Escribe tu email">
-                    <label for="email-adherente-1">Email</label>
-                    <span class="pull-right alert-error"></span>
-                  </div>
+                <!-- Email -->
+                <div class="form-group">
+                  <input type="email" name="email" id="email-adherente-1" class="form-control validate-locally" placeholder="Escribe tu email" required>
+                  <label for="email-adherente-1">Email</label>
+                  <span class="pull-right alert-error"></span>
+                </div>
 
-                  <!-- Pais -->
-                  <div class="form-group">
-                    <select name="pais" id="pais-adherente-1" class="form-control validate-locally" autocomplete></select>
-                    <label for="pais-adherente-1">País</label>
-                  </div>
-                  <input id="submit-adhere" type="submit" class="btn pull-right" value="¡Adherir!">
+                <!-- Pais -->
+                <div class="form-group">
+                  <select name="pais" id="pais-adherente-1" class="form-control validate-locally" autocomplete></select>
+                  <label for="pais-adherente-1">País</label>
+                </div>
+                <input id="submit-adhere" type="submit" class="btn pull-right" value="¡Adherir!">
 
-                  <!-- Ajax Message -->
-                  <div class="ajax-message col-md-12 no-gap"></div>
+                <!-- Ajax Message -->
+                <div class="ajax-message col-md-12 no-gap"></div>
 
-                </form>
+              </form>
+
+              <div id="form-adhere-done">
+                <h1>¡Gracias por Adherir a la Carta!</h1>
+                <a href="https://www.facebook.com/reddeinnovaciopolitica/" target="_blank">
+                  <input id="submit-adhere" type="button" class="btn" style="margin: 20px 0" value="Quiero hacer más!">
+                </a>
               </div>
+            </div>
 
           </div><!-- / .row -->
         </div><!-- / .container -->
@@ -1440,10 +1448,21 @@
         </div><!-- / .gray-bg -->
 
 
+        <!-- ========== POLITICA RECUPERADA - Section ========== -->
 
-        <!-- ========== Portfolio Single ========== -->
 
 
+       <section id="politicarecuperada">
+        <div class="section container blog-classic" style="padding-top:45px">
+          <div class="row">
+
+            <header class="sec-heading">
+              <h1 class="pull-left">Política Recuperada</h2>
+            </header>
+
+          </div><!-- / .row -->
+        </div><!-- / .container -->
+        </section>
 
 
         <!-- ========== Video Background Section ========== -->
@@ -1769,6 +1788,7 @@
         <!-- ========== Scripts ========== -->
 
         <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
         <script src="assets/js/vendor/google-fonts.js"></script>
         <script src="assets/js/vendor/jquery.easing.js"></script>
         <script src="assets/js/vendor/jquery.waypoints.min.js"></script>
@@ -1805,5 +1825,6 @@
         <!-- Definity JS -->
         <script src="assets/js/main.js"></script>
         <script src="assets/js/adhere-form.js"></script>
+        <script src="assets/js/urlmanager.js"></script>
     </body>
 </html>

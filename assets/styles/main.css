@@ -1858,6 +1858,41 @@ input[type=radio]:checked ~ label{
   color: #2182c5;
 }
 
+/*------ Combobox ------*/
+.select2-container .select2-selection--single {
+  height: 40px;
+  padding-left: 20px;
+  border: 1px solid #ddd;
+  border-radius: 0;
+  box-shadow: none;
+  line-height: 22px;
+  letter-spacing: .5px;
+  background: #ffffff;
+  -webkit-transition: border-color 0.5s;
+  transition: border-color 0.5s;
+}
+.select2-container .select2-selection--single:hover, .select2-container .select2-selection--single:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #777;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  line-height: 38px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 38px;
+  right: 10px;
+}
+
+
+#form-adhere-done {
+  display: none;
+  text-align: center;
+  margin: 50px 0;
+}
+
 /* --------------------------------------------------
 	X.0 Progress Bars
 -------------------------------------------------- */
@@ -6689,7 +6724,7 @@ input[type=radio]:checked ~ label{
 
 /* ---- 18.3 Blog Classic ---- */
 .blog-classic .blog-post {
-  margin-bottom: 100px;
+  margin-bottom: 0px;
 }
 
 /* ---- 18.4 Blog Post Single ---- */

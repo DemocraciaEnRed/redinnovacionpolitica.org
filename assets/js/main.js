@@ -847,7 +847,7 @@ $( '.form-ajax' ).on( 'keyup', 'input.validate-locally', function() {
 });
 
 //	AJAX call
-$( '.form-ajax' ).submit(function(e) {
+$( '#contact-form' ).submit(function(e) {
 	e.preventDefault();
 	var $this = $( this ),
 		action = $this.attr( 'action' );
@@ -878,7 +878,7 @@ function validateField ( field ) {
 	if ( field.attr("name") === "name" ) {
 		if ( !validateLength( value, 2 ) ) {
 					error = true;
-					errorText += '<i class="fa fa-info-circle"></i> The name is too short!<br>';
+					errorText += '<i class="fa fa-info-circle"></i> El nombre es muy corto!<br>';
 					$('input[name="name"]').addClass('input-error');
 		} else {
 			$('input[name="name"]').removeClass('input-error');
@@ -886,7 +886,7 @@ function validateField ( field ) {
 
 		if ( !expLettersOnly.test( value ) ) {
 					error = true;
-					errorText += '<i class="fa fa-info-circle"></i> The name can contain only letters and spaces!<br>';
+					errorText += '<i class="fa fa-info-circle"></i> El nombre sólo puede contener letras y espacios!<br>';
 					$('input[name="name"]').addClass('input-error-2');
 		} else {
 			$('input[name="name"]').removeClass('input-error-2');
@@ -897,7 +897,7 @@ function validateField ( field ) {
 	if ( field.attr("name") === "email" ) {
 		if ( !expEmail.test( value ) ) {
 					error = true;
-					errorText += '<i class="fa fa-info-circle"></i> Enter correct email address!<br>';
+					errorText += '<i class="fa fa-info-circle"></i> Ingresa una dirección de e-mail correcta!<br>';
 					$('input[name="email"]').addClass('input-error');
 		} else {
 			$('input[name="email"]').removeClass('input-error');

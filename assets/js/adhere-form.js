@@ -12,6 +12,7 @@ $(window).load(function() {
         $.each( data, function( key, val ) {
             select.append('<option value="'+key+'">'+val+'</option>')
         });
+        select.select2();
     })
     .fail(function( jqxhr, textStatus, error ) {
         var err = textStatus + ", " + error;
@@ -32,16 +33,35 @@ $(window).load(function() {
         }
     })
 
-    /* Enviamos el formulario 
-    $('#submit-adhere').click(function(ev){
-        $.post( '/assets/php/adhere-form.php', $('form-adhere').serialize())
+    /* Enviamos el formulario */
+    $( '#form-adhere' ).submit(function(e) {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        var $this = $( this ),
+            action = $this.attr( 'action' );
+
+        // The AJAX requrest
+        var data = $this.serialize();
+        $.get( action, data )
         .done(function(data) {
-            $( '.ajax-message' ).html( data );
+            $("#form-adhere").slideToggle('slow', function(){
+                $("#form-adhere-done").slideToggle('slow');
+            });
         })
         .fail(function( jqxhr, textStatus, error ) {
             var err = textStatus + ", " + error;
             console.log( "Request Failed: " + err );
         });
+
+        return false;
     });
-    */
+
+/*
+    $('#submit-adhere').click(function(ev){
+        $("#form-adhere").slideToggle('slow', function(){
+            $("#form-adhere-done").slideToggle('slow');
+        });
+    });
+*/
+
 });
