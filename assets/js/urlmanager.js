@@ -7,7 +7,14 @@ $(window).load(function() {
         {
             $('html,body').animate({
               scrollTop: $('#politicarecuperada').offset().top - 150
-            }, 1000);
+            }, 1000, function(){
+                if(secciones[secciones.length-1] != 'politicarecuperada')
+                {
+                    var id = secciones[secciones.length-1];
+                    CargarVideo(videos.filter(function(item){return item.id.videoId == id})[0], false);
+                    MostrarReproductor();
+                }
+            });
         }
         else if (secciones.indexOf('adherir') > -1)
         {

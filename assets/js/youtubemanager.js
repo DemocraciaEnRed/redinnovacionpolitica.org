@@ -20,6 +20,8 @@ $(window).load(function() {
     $(".youtube-player-closebutton").on('click', function(ev){
         playerPoliticaRecuperada.stopVideo();
         OcultarReproductor();
+        var obj = { Title: document.title, Url: window.location.origin + window.location.pathname + "#!/politicarecuperada" };
+        window.history.pushState(obj, obj.Title, obj.Url);
     });
 
     CalcularProporcionTrailer();
@@ -54,8 +56,8 @@ function CreatePreview(item)
       '</div>');
     $('#politicarecuperada .row').append(element);
 
-    element.on('click', function(ev){
-        CargarVideo(item);
+    element.find('.youtube-thumb, .youtube-title, .youtube-description').on('click', function(ev){
+        CargarVideo(item, true);
         MostrarReproductor();
     });
 
@@ -153,7 +155,7 @@ function OcultarReproductor()
 }
 
 var player;
-function CargarVideo(item)
+function CargarVideo(item, changeurl)
 {
     var fecha = moment(item.snippet.publishedAt);
     $("#youtube-player-date").html(fecha.date() + ' de ' + getMonthName(fecha.month()) + ' del ' + fecha.year());
@@ -162,6 +164,12 @@ function CargarVideo(item)
     $("#youtube-player-description").html(item.snippet.description);
 
 	playerPoliticaRecuperada.loadVideoById({'videoId': item.id.videoId, 'startSeconds': 0});
+
+    if (changeurl)
+    {
+        var obj = { Title: document.title, Url: window.location.origin + window.location.pathname + "#!/politicarecuperada/" + item.id.videoId };
+        window.history.pushState(obj, obj.Title, obj.Url);
+    }
 }
 
 var videoDone = false;
