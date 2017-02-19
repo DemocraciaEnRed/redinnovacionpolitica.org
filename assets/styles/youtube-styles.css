@@ -1,0 +1,217 @@
+
+.trailer-container {
+    padding: 20px 10%;
+}
+
+/*--------------------------------------------------*/
+/*--------------------- ITEMS ----------------------*/
+/*--------------------------------------------------*/
+
+.youtube-container {
+    height: 290px;
+    margin-bottom: 30px;
+    border-radius: 2px;
+    background-color: #f6f6f6;
+    box-shadow: 0px 1px 1px rgba(0,0,0,.2);
+    transition: all 500ms;
+    cursor: pointer;
+}
+
+.youtube-container, .youtube-player-container {
+    font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.youtube-container:hover {
+    box-shadow: 0px 1px 5px rgba(0,0,0,.3);
+}
+
+.youtube-container .youtube-thumb {
+    height: 150px;
+    background-color: #ddd;
+    position: relative;
+    cursor: inherit;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.youtube-container .youtube-thumb:after {
+    content: '';
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .9);
+    background-image: url('../images/play-button-icon.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 20% auto;
+    transition: all 500ms;
+}
+
+.youtube-container:hover > .youtube-thumb:after {
+    opacity: .9;
+    transition: all 500ms;
+}
+
+.youtube-date {
+    font-size: 12px;
+    letter-spacing: -.3px;
+    color: #999;
+    line-height: 15px;
+    width: 100%;
+    padding: 7px 7px 7px 27px;
+    background-image: url('../images/calendar-icon.png');
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    background-size: 17px;
+    position: relative;
+    cursor: inherit;
+}
+.youtube-date:before {
+    content: attr(data-day);
+    position: absolute;
+    left: 5px;
+    top: 8px;
+    font-size: 10px;
+    width: 17px;
+    text-align: center;
+    color: #333;
+}
+
+.youtube-container .youtube-date .share-buttons {
+    opacity: 0;
+    position: absolute;
+    right: 4px;
+    top: 0;
+    transition: all 500ms;
+}
+.youtube-container .youtube-date .share-buttons .share-button {
+    height:20px;
+    width:20px;
+    display: inline-block;
+    margin: 4px 1px;
+    opacity: .8;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+
+.youtube-container .youtube-date .share-buttons .share-button.facebook-button {
+    background-image: url(../images/facebook-share-icon.png);
+}
+.youtube-container .youtube-date .share-buttons .share-button.twitter-button {
+    background-image: url(../images/twitter-share-icon.png);
+}
+
+.youtube-container:hover .share-buttons {
+    opacity: 1;
+    transition: all 500ms;
+}
+
+.youtube-title {
+    font-size: 17px;
+    color: #2283aa;
+    line-height: 20px;
+    width: 100%;
+    padding: 7px;
+    cursor: inherit;
+    position: relative;
+}
+.youtube-container .youtube-title {
+    border: 1px solid #2283aa;
+    border-width: 1px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    max-height: 52px;
+}
+
+.youtube-description {
+    font-size: 13px;
+    color: #777;
+    line-height: 15px;
+    width: 100%;
+    padding: 5px;
+    cursor: inherit;
+    font-family: sans-serif;
+}
+.youtube-container .youtube-description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    max-height: 50px;
+}
+
+
+/*--------------------------------------------------*/
+/*------------------ REPRODUCTOR -------------------*/
+/*--------------------------------------------------*/
+
+.youtube-player-wrapper {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.8);
+    z-index: 1000000000;
+}
+
+.youtube-player-container {
+    position: absolute;
+    left: 2%;
+    top: 3%;
+    width: 96%;
+    height: 94%;
+}
+
+.youtube-player {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80%;
+    height: 100%;
+    background: #111;
+}
+
+.youtube-player-rightpanel {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    padding: 10px 20px;
+    background: #eee;
+}
+
+.youtube-player-closebutton {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    transition: all 200ms;
+    background-image: url(../images/close-icon.png);
+    background-size: 20px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor:pointer;
+}
+
+.youtube-player-closebutton:hover {
+    background-color: rgba(0,0,0,.1);
+}
+
+
+@media (max-width: 600px) {
+    .trailer-container {
+        padding: 20px 0;
+    }
+}

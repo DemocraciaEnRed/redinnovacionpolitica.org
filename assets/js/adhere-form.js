@@ -5,7 +5,7 @@ $(window).load(function() {
     contr.first().prop( "checked", true );
 
     /* Cargar lista de paises en el select */
-    $.ajax({ url: '/assets/js/countries.json', dataType: 'text'})
+    $.ajax({ url: location.origin + location.pathname + '/assets/js/countries.json', dataType: 'text'})
     .done(function( data ) {
         data = JSON.parse(data);
         var select = $('#pais-adherente-1');

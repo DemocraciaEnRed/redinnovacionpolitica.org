@@ -2150,7 +2150,7 @@ input[type=radio]:checked ~ label{
 
 /* ---- 4.5 Header/Page Title Parallax ---- */
 .pt-plax-md-dark {
-  background: url(../images/Red_IPL-130.jpg?2440x1280);
+  background: url(../images/fotos/Red_IPL-130.jpg?2440x1280);
   background-size: cover;
   background-position: 50%;
 }
@@ -2166,7 +2166,7 @@ input[type=radio]:checked ~ label{
 }
 
 .pt-plax-md-light {
-  background: url(../images/Red_IPL-130.jpg?2440x1280);
+  background: url(../images/fotos/Red_IPL-130.jpg?2440x1280);
   background-size: cover;
 }
 
@@ -2181,7 +2181,7 @@ input[type=radio]:checked ~ label{
 }
 
 .pt-plax-lg-dark {
-  background: url(../images/Red_IPL-130.jpg?2440x1280);
+  background: url(../images/fotos/Red_IPL-130.jpg?2440x1280);
   background-size: cover;
 }
 
@@ -2196,7 +2196,7 @@ input[type=radio]:checked ~ label{
 }
 
 .pt-plax-lg-light {
-  background: url(../images/Red_IPL-130.jpg?2440x1280);
+  background: url(../images/fotos/Red_IPL-130.jpg?2440x1280);
   background-size: cover;
 }
 
@@ -4084,7 +4084,7 @@ input[type=radio]:checked ~ label{
 }
 
 .ft-hover-item .ft-1, .ft-hover-item .ft-2 {
-  background: #ccc url(../images/Red_IPL-130.jpg?900x580);
+  background: #ccc url(../images/fotos/Red_IPL-130.jpg?900x580);
   background-size: 100%;
   background-position: 50%;
   -webkit-transition: background-size 0.3s;
@@ -4104,7 +4104,7 @@ input[type=radio]:checked ~ label{
 }
 
 .ft-hover-item .ft-2 {
-  background: #ccc url(../images/Red_IPL-130.jpg?900x580/999/eee);
+  background: #ccc url(../images/fotos/Red_IPL-130.jpg?900x580/999/eee);
   background-size: 100%;
   background-position: 50%;
 }
@@ -4156,7 +4156,7 @@ input[type=radio]:checked ~ label{
 
 .video-bg-section {
   height: 365px;
-  background: #ccc url(../images/Red_IPL-130.jpg?2440x1578);
+  background: #ccc url(../images/fotos/Red_IPL-130.jpg?2440x1578);
   background-position: 50%;
   background-size: cover;
 }
@@ -4334,7 +4334,7 @@ input[type=radio]:checked ~ label{
 /* ---- 10.1 Circle Counters ---- */
 .circles-counters, .circles-counters-dark-bg {
   position: relative;
-  background: #ccc url(../images/Red_IPL-130.jpg?2440x1578);
+  background: #ccc url(../images/fotos/Red_IPL-130.jpg?2440x1578);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -4381,7 +4381,7 @@ input[type=radio]:checked ~ label{
 /* ---- 10.2 Counters - Numbers ---- */
 .number-counters, .number-counters-dark-bg {
   position: relative;
-  background: #ccc url(../images/Red_IPL-130.jpg?2102x1578);
+  background: #ccc url(../images/fotos/Red_IPL-130.jpg?2102x1578);
   background-size: cover;
   background-position: 50%;
   background-attachment: fixed;
@@ -4508,7 +4508,7 @@ input[type=radio]:checked ~ label{
 -------------------------------------------------- */
 /* ---- 12.1 Testimonial - 1 Column Slider ---- */
 .testimonials-parallax, .testimonials-dark {
-  background: url(../images/Red_IPL-130.jpg?2440x1578);
+  background: url(../images/fotos/Red_IPL-130.jpg?2440x1578);
   background-size: cover;
   background-position: 50%;
   background-attachment: fixed;
@@ -4622,7 +4622,7 @@ input[type=radio]:checked ~ label{
 }
 
 .testimonials-bg-2 {
-  background: url(../images/Red_IPL-130.jpg?2440x1578);
+  background: url(../images/fotos/Red_IPL-130.jpg?2440x1578);
   background-size: cover;
   background-position: 50%;
   background-attachment: fixed;
@@ -4718,7 +4718,7 @@ input[type=radio]:checked ~ label{
 
 /* ---- 12.3 Clients List ---- */
 .clients-list-parallax, .clients-list-minimal, .clients-list-gray {
-  background: url(../images/Red_IPL-130.jpg?2440x1578);
+  background: url(../images/fotos/Red_IPL-130.jpg?2440x1578);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -7405,7 +7405,7 @@ form .input-error-2:focus {
   position: relative;
   width: 100%;
   height: 100%;
-  background: #ececec url(../images/Red_IPL-130.jpg?2440x1578);
+  background: #ececec url(../images/fotos/Red_IPL-130.jpg?2440x1578);
   background-position: 50%;
   background-size: cover;
   background-attachment: fixed;
@@ -7565,7 +7565,7 @@ form .input-error-2:focus {
 .comingsoon {
   width: 100%;
   height: 100vh;
-  background: #ececec url(../images/Red_IPL-130.jpg?2440x1578);
+  background: #ececec url(../images/fotos/Red_IPL-130.jpg?2440x1578);
   background-position: 50%;
   background-size: cover;
 }
@@ -7635,7 +7635,7 @@ form .input-error-2:focus {
   display: table;
   width: 100%;
   height: 100vh;
-  background: #ececec url(../images/Red_IPL-130.jpg?2440x1578);
+  background: #ececec url(../images/fotos/Red_IPL-130.jpg?2440x1578);
   background-position: 50%;
   background-size: cover;
 }
@@ -7734,7 +7734,7 @@ form .input-error-2:focus {
 	23.0 Maintenance Page
 -------------------------------------------------- */
 .bg-maintenance {
-  background: #ccc url(../images/Red_IPL-130.jpg?2440x1578);
+  background: #ccc url(../images/fotos/Red_IPL-130.jpg?2440x1578);
   background-position: 50%;
   background-size: cover;
 }
@@ -7989,7 +7989,7 @@ form .input-error-2:focus {
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url(../images/Red_IPL-130.jpg?2440x1578);
+  background: url(../images/fotos/Red_IPL-130.jpg?2440x1578);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -8064,7 +8064,7 @@ form .input-error-2:focus {
 }
 
 .fs-slide-1 {
-  background: url(../images/Red_IPL-130.jpg?2440x1578);
+  background: url(../images/fotos/Red_IPL-130.jpg?2440x1578);
   background-size: cover;
 }
 
@@ -8091,7 +8091,7 @@ form .input-error-2:focus {
 }
 
 .fs-slide-2 {
-  background: url(../images/Red_IPL-130.jpg?2440x1578);
+  background: url(../images/fotos/Red_IPL-130.jpg?2440x1578);
   background-size: cover;
 }
 
@@ -8122,7 +8122,7 @@ form .input-error-2:focus {
 }
 
 .fs-slide-3 {
-  background: url(../images/Red_IPL-130.jpg?2440x1578);
+  background: url(../images/fotos/Red_IPL-130.jpg?2440x1578);
   background-size: cover;
 }
 
@@ -8189,7 +8189,7 @@ form .input-error-2:focus {
 }
 
 .fw-slider-hero .fw-slide-1, .fw-slider-hero .fw-slide-3 {
-  background: url(../images/Red_IPL-130.jpg?2440x1578);
+  background: url(../images/fotos/Red_IPL-130.jpg?2440x1578);
   background-size: cover;
   background-position: 50%;
 }
@@ -8213,7 +8213,7 @@ form .input-error-2:focus {
 }
 
 .fw-slider-hero .fw-slide-2 {
-  background: url(../images/Red_IPL-130.jpg?2440x1578);
+  background: url(../images/fotos/Red_IPL-130.jpg?2440x1578);
   background-size: cover;
   background-position: 50%;
 }
@@ -8245,7 +8245,7 @@ form .input-error-2:focus {
 }
 
 .fw-slider-hero .fw-slide-3 {
-  background: url(../images/Red_IPL-130.jpg?2440x1578);
+  background: url(../images/fotos/Red_IPL-130.jpg?2440x1578);
   background-size: cover;
   background-position: 50%;
 }
@@ -8261,7 +8261,7 @@ form .input-error-2:focus {
 
 /* ---- 20.4 Full Screen Video ---- */
 .fs-video-hero, .fw-video-hero {
-  background: url(/assets/images/fotos/Red_IPL-130.jpg);
+  background: url(../images/fotos/Red_IPL-130.jpg);
     background-position: center 40%;
     background-size: cover;
 }
@@ -8313,7 +8313,7 @@ form .input-error-2:focus {
 
 /* ---- 20.6 Text Slider ---- */
 .text-slider-hero {
-  background: url(../images/Red_IPL-130.jpg?2440x1578);
+  background: url(../images/fotos/Red_IPL-130.jpg?2440x1578);
   background-size: cover;
   background-position: 50%;
 }
@@ -8348,7 +8348,7 @@ form .input-error-2:focus {
 
 /* ---- 20.7 Freelancer ---- */
 .freelancer-hero {
-  background: url(../images/Red_IPL-130.jpg?2440x1578);
+  background: url(../images/fotos/Red_IPL-130.jpg?2440x1578);
   background-size: cover;
   background-position: 40%;
   background-attachment: fixed;
@@ -8425,7 +8425,7 @@ form .input-error-2:focus {
 }
 
 .agency2-hero {
-  background: url(../images/Red_IPL-130.jpg?2440x1578);
+  background: url(../images/fotos/Red_IPL-130.jpg?2440x1578);
   background-size: cover;
   background-position: 50%;
   background-attachment: fixed;
@@ -8495,7 +8495,7 @@ form .input-error-2:focus {
 
 /* ---- 20.9 Animated Heading ---- */
 .animated-hero {
-  background: url(../images/Red_IPL-130.jpg?2440x1578);
+  background: url(../images/fotos/Red_IPL-130.jpg?2440x1578);
   background-size: cover;
   background-position: 50%;
   background-attachment: fixed;
@@ -8605,7 +8605,7 @@ form .input-error-2:focus {
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url(../images/Red_IPL-130.jpg?2440x1578);
+  background: url(../images/fotos/Red_IPL-130.jpg?2440x1578);
   background-size: cover;
   background-position: 40%;
   background-attachment: fixed;
@@ -8712,7 +8712,7 @@ form .input-error-2:focus {
 }
 
 .web-app-hero {
-  background: url(../images/Red_IPL-130.jpg?2440x1578);
+  background: url(../images/fotos/Red_IPL-130.jpg?2440x1578);
   background-size: cover;
   background-position: 50%;
   background-attachment: fixed;
@@ -10407,11 +10407,28 @@ separador.veinte{
   margin: 0;
   color: #eee;
 }
+.medium{
+  font-size: 40px;
+  line-height: 40px;
+  margin: 0;
+  color: #eee;
+}
 .big{
   font-size: 60px;
   line-height: 60px;
   margin: 0;
   color: #eee;
+}
+
+.subtitle {
+  letter-spacing: 0px;
+  font-size: 20px;
+  color: #666;
+  width: 100%;
+}
+
+.dark-color {
+  color: #222;
 }
 
 /* Members Boxes */

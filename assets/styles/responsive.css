@@ -753,6 +753,13 @@
   .login-2 .bg-overlay .social-signup .social-card i {
     display: none;
   }
+
+  .medium{
+    font-size: 25px;
+  }
+  .tiny{
+    font-size: 18px;
+  }
 }
 
 /* ---- 404 Page ---- */
