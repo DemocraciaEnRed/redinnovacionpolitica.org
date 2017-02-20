@@ -7,8 +7,13 @@ $(window).load(function() {
         {
             data.items.forEach(function callback(item, index) {
                 if(item.id.kind == "youtube#video" && (item.id.videoId != "jWFZLB7vQHk" || item.id.videoId != "TXNo80KL8Cg"))
-                    CreatePreview(item);
-                    videos.push(item);
+                    $.ajax('https://www.googleapis.com/youtube/v3/videos?part=snippet&id='+item.id.videoId+'&fields=items/snippet/title,items/snippet/description&key=AIzaSyAb1wAtmSCTWL9ACVydY0TwPR4VQv72XJ8')
+                    .done(function(data){
+                        item.snippet.title = data.items[0].snippet.title.split('#POLITICARECUPERADA -').last().trim();
+                        item.snippet.description = data.items[0].snippet.description.split('para la redinnovacionpolitica.org').last().trim();
+                        CreatePreview(item);
+                        videos.push(item);
+                    });
             });
         }
     })
@@ -42,23 +47,30 @@ function CreatePreview(item)
     var element = 
     $('<div class="col-lg-3 col-md-6 mb-sm-50">'+
         '<div class=" youtube-container" id="'+item.id.videoId+'">'+
-        '<div class="youtube-thumb" style="background-image:url('+item.snippet.thumbnails.high.url+')"></div>'+
-        '<div class="youtube-date" data-day="'+fecha.date()+'">'+
-            fecha.date() + ' de ' + getMonthName(fecha.month()) + ' del ' + fecha.year() +
-            '<div class="share-buttons">'+
-            '<div class="share-button facebook-button" id="facebook-'+item.id.videoId+'"></div>'+
-            '<div class="share-button twitter-button" id="twitter-'+item.id.videoId+'"></div>'+
+            '<div class="youtube-thumb" style="background-image:url('+item.snippet.thumbnails.high.url+')"></div>'+
+            '<div class="youtube-title">'+item.snippet.title+'</div>'+
+            '<div class="youtube-description">'+item.snippet.description+'</div>'+
+            '<div class="youtube-date">'+
+                '<div class="calendar-button" id="calendar-'+item.id.videoId+'" data-day="'+fecha.date()+'" data-month="'+getMonthName(fecha.month(),true)+'"></div>'+
+                '<div class="share-buttons">'+
+                    '<div class="share-button facebook-button" id="facebook-'+item.id.videoId+'">Compartir</div>'+
+                    '<div class="share-button twitter-button" id="twitter-'+item.id.videoId+'">Twittear</div>'+
+                '</div>'+
             '</div>'+
-        '</div>'+
-        '<div class="youtube-title">'+item.snippet.title+'</div>'+
-        '<div class="youtube-description">'+item.snippet.description+'</div>'+
         '</div>'+
       '</div>');
     $('#politicarecuperada .row').append(element);
 
     element.find('.youtube-thumb, .youtube-title, .youtube-description').on('click', function(ev){
-        CargarVideo(item, true);
-        MostrarReproductor();
+        if (!isMobile)
+        {
+            CargarVideo(item, true);
+            MostrarReproductor();
+        }
+        else
+        {
+            window.location.href = "https://youtube.com/watch?v=" + item.id.videoId;
+        }
     });
 
     $('#facebook-'+item.id.videoId).on('click', function(ev){
@@ -92,22 +104,22 @@ function CompartirTwitter(item)
     'text='+ '%23PoliticaRecuperada Ciclo de entrevistas realizadas por la Red de Innovación Política', 'tweet', 'width=900,height=300,menubar=no,status=no,titlebar=no,top=200,left='+(screen.width-900)/2);
 }
 
-function getMonthName(num)
+function getMonthName(num, short)
 {
     switch(num)
     {
-        case 0: return "Enero";
-        case 1: return "Febrero";
-        case 2: return "Marzo";
-        case 3: return "Abril";
-        case 4: return "Mayo";
-        case 5: return "Junio";
-        case 6: return "Julio";
-        case 7: return "Agosto";
-        case 8: return "Septiembre";
-        case 9: return "Octubre";
-        case 10: return "Noviembre";
-        case 11: return "Diciembre";
+        case 0: return !short ? "Enero" : "Ene";
+        case 1: return !short ? "Febrero" : "Feb";
+        case 2: return !short ? "Marzo" : "Mar";
+        case 3: return !short ? "Abril" : "Abr";
+        case 4: return !short ? "Mayo" : "May";
+        case 5: return !short ? "Junio" : "Jun";
+        case 6: return !short ? "Julio" : "Jul";
+        case 7: return !short ? "Agosto" : "Ago";
+        case 8: return !short ? "Septiembre" : "Sep";
+        case 9: return !short ? "Octubre" : "Oct";
+        case 10: return !short ? "Noviembre" : "Nov";
+        case 11: return !short ? "Diciembre" : "Dic";
     }
 }
 
