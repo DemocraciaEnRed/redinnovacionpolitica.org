@@ -1,3 +1,35 @@
-[15-Feb-2017 21:10:59] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '../config.php' for inclusion (include_path='.:/usr/lib64/php:/usr/share/pear') in /home1/redinno2/public_html/assets/php/adhere-form.php on line 5
-[15-Feb-2017 21:10:59] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home1/redinno2/public_html/assets/php/adhere-form.php on line 9
-[15-Feb-2017 21:10:59] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home1/redinno2/public_html/assets/php/adhere-form.php on line 9
+[23-Feb-2017 04:39:42 UTC] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[23-Feb-2017 04:39:42 UTC] PHP Warning:  PHP Startup: http: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[23-Feb-2017 04:39:42 UTC] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[23-Feb-2017 04:39:42 UTC] PHP Warning:  PHP Startup: mailparse: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[23-Feb-2017 04:39:42 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/php/54/usr/lib64/php/modules/oauth.so' - /usr/php/54/usr/lib64/php/modules/oauth.so: undefined symbol: zval_used_for_init in Unknown on line 0
+[23-Feb-2017 04:39:42 UTC] PHP Warning:  PHP Startup: oci8: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[23-Feb-2017 04:39:42 UTC] PHP Warning:  PHP Startup: uploadprogress: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[22-Feb-2017 21:39:42 America/Denver] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_fetch_array() in /home1/redinno2/public_html/assets/php/adhere-form.php:12
+Stack trace:
+#0 {main}
+  thrown in /home1/redinno2/public_html/assets/php/adhere-form.php on line 12
