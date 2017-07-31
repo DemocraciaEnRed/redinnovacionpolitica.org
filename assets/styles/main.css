@@ -278,6 +278,10 @@ hr {
   font-weight: 400;
 }
 
+.grayer-bg {
+  background: #f1f1f1;
+}
+
 .gray-bg {
   background: #f8f8f8;
 }
